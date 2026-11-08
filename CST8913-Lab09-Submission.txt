@@ -1,0 +1,13 @@
+CST8913 Lab 09: Cloud Cost Estimation for Enterprise Application Migration
+Chukwudubem Chukwurah
+November 7, 2026
+
+GitHub repository:
+https://github.com/chuk003-cloudops/CST8913-Lab9
+
+Complete report (all three deliverables):
+https://github.com/chuk003-cloudops/CST8913-Lab9/blob/main/REPORT.md
+
+The repository includes the cost estimate report, cost optimization strategy,
+three-year growth and budget plan, detailed cost CSVs, pricing sources,
+original Azure calculator export, screenshots and reproducible verification.
