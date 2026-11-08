@@ -1,0 +1,163 @@
+{
+  "assumptions": {
+    "estimate_date": "2026-11-07",
+    "currency": "USD",
+    "hours_per_month": 730,
+    "peak_hours": 244,
+    "off_peak_hours": 486,
+    "traffic_growth": 0.2,
+    "data_growth": 0.3,
+    "contingency": 0.15,
+    "regions": [
+      "eastus",
+      "westeurope",
+      "southeastasia"
+    ],
+    "web_vms_per_region": 10,
+    "api_peak_vms": [
+      8,
+      6,
+      6
+    ],
+    "api_off_peak_vms": [
+      4,
+      3,
+      3
+    ],
+    "payment_vms_per_region": 2,
+    "sql_vcores_by_year": [
+      8,
+      10,
+      12
+    ],
+    "sql_compute_copies": [
+      2,
+      1,
+      1
+    ],
+    "sql_gb": 5000,
+    "cosmos_gb": 10000,
+    "warehouse_tb": 15,
+    "cosmos_ru_per_region": 20000,
+    "blob_backup_gb_per_region": 30000,
+    "cdn_gb_per_region": 5000,
+    "cdn_requests_per_region": 10000000,
+    "edge_to_origin_gb_per_region": 100,
+    "cosmos_replication_gb_per_destination": 1000,
+    "blob_delta_gb_per_destination": 3000,
+    "nat_gb_per_region": 1000,
+    "load_balancer_gb_per_region": 2000,
+    "logs_gb": 400,
+    "logs_free_gb": 5,
+    "alert_time_series": 30,
+    "free_alert_time_series": 10,
+    "gpu_optimized_hours": 200,
+    "batch_vms": 2,
+    "batch_optimized_hours": 220,
+    "warehouse_optimized_hours": 220,
+    "migration_hours": 336,
+    "migration_days": 14,
+    "vm_disk_operations_per_vm": 1000000,
+    "blob_operations_per_region": 10000000,
+    "eligible_windows_licenses_confirmed": false
+  },
+  "cases": {
+    "baseline": {
+      "year": 1,
+      "mode": "baseline",
+      "term": "1y",
+      "ahb": false,
+      "operations": "44486.87",
+      "management": "1371.93",
+      "monthly": "45858.80",
+      "maximum_vms": 59,
+      "vm_hours": "43070"
+    },
+    "scheduled": {
+      "year": 1,
+      "mode": "scheduled",
+      "term": "1y",
+      "ahb": false,
+      "operations": "41987.80",
+      "management": "1328.86",
+      "monthly": "43316.66",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    },
+    "optimized": {
+      "year": 1,
+      "mode": "optimized",
+      "term": "1y",
+      "ahb": false,
+      "operations": "37556.12",
+      "management": "1328.86",
+      "monthly": "38884.98",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    },
+    "optimized_3y": {
+      "year": 1,
+      "mode": "optimized",
+      "term": "3y",
+      "ahb": false,
+      "operations": "35000.46",
+      "management": "1328.86",
+      "monthly": "36329.32",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    },
+    "optimized_ahb_if_eligible": {
+      "year": 1,
+      "mode": "optimized",
+      "term": "1y",
+      "ahb": true,
+      "operations": "36750.20",
+      "management": "1328.86",
+      "monthly": "38079.06",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    }
+  },
+  "migration": {
+    "total": "36249.78",
+    "cloud_only": "30249.78"
+  },
+  "projections": [
+    {
+      "year": 1,
+      "baseline_monthly": "45858.80",
+      "optimized_monthly": "38884.98",
+      "baseline_annual": "550305.60",
+      "optimized_annual": "466619.76",
+      "one_time_migration": "36249.78",
+      "planned_total": "502869.54",
+      "budget_with_15pct_contingency": "578299.97",
+      "annual_recurring_savings": "83685.84",
+      "maximum_vms": 59
+    },
+    {
+      "year": 2,
+      "baseline_monthly": "56809.22",
+      "optimized_monthly": "48670.30",
+      "baseline_annual": "681710.64",
+      "optimized_annual": "584043.60",
+      "one_time_migration": "0",
+      "planned_total": "584043.60",
+      "budget_with_15pct_contingency": "671650.14",
+      "annual_recurring_savings": "97667.04",
+      "maximum_vms": 71
+    },
+    {
+      "year": 3,
+      "baseline_monthly": "70071.28",
+      "optimized_monthly": "60841.59",
+      "baseline_annual": "840855.36",
+      "optimized_annual": "730099.08",
+      "one_time_migration": "0",
+      "planned_total": "730099.08",
+      "budget_with_15pct_contingency": "839613.94",
+      "annual_recurring_savings": "110756.28",
+      "maximum_vms": 84
+    }
+  ]
+}

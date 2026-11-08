@@ -1,0 +1,3801 @@
+{
+  "status": "PASS",
+  "checks_passed": 747,
+  "calculator_export_sha256": "683f255eeafe65d8bcb7a52ca2009d597d66190ddd155de2562181b29c604ea7",
+  "calculator_reference_total_usd": "15941.08",
+  "model_results": {
+    "baseline": {
+      "year": 1,
+      "mode": "baseline",
+      "term": "1y",
+      "ahb": false,
+      "operations": "44486.87",
+      "management": "1371.93",
+      "monthly": "45858.80",
+      "maximum_vms": 59,
+      "vm_hours": "43070"
+    },
+    "scheduled": {
+      "year": 1,
+      "mode": "scheduled",
+      "term": "1y",
+      "ahb": false,
+      "operations": "41987.80",
+      "management": "1328.86",
+      "monthly": "43316.66",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    },
+    "optimized": {
+      "year": 1,
+      "mode": "optimized",
+      "term": "1y",
+      "ahb": false,
+      "operations": "37556.12",
+      "management": "1328.86",
+      "monthly": "38884.98",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    },
+    "optimized_3y": {
+      "year": 1,
+      "mode": "optimized",
+      "term": "3y",
+      "ahb": false,
+      "operations": "35000.46",
+      "management": "1328.86",
+      "monthly": "36329.32",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    },
+    "optimized_ahb_if_eligible": {
+      "year": 1,
+      "mode": "optimized",
+      "term": "1y",
+      "ahb": true,
+      "operations": "36750.20",
+      "management": "1328.86",
+      "monthly": "38079.06",
+      "maximum_vms": 59,
+      "vm_hours": "36660"
+    }
+  },
+  "checks": [
+    {
+      "check": "730-hour month fully allocated",
+      "result": "PASS",
+      "evidence": "730"
+    },
+    {
+      "check": "Assignment starting VM and data counts",
+      "result": "PASS",
+      "evidence": "30 web VMs, 20 peak API VMs, 5/10/15 TB"
+    },
+    {
+      "check": "Price nonnegative: vm_eastus_payg",
+      "result": "PASS",
+      "evidence": "0.192"
+    },
+    {
+      "check": "Quoted record matches: vm_eastus_payg",
+      "result": "PASS",
+      "evidence": "db8c0962-f3f8-5b44-99aa-f3c7c1e668c8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_eastus_payg",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_eastus_payg",
+      "result": "PASS",
+      "evidence": "0.18266"
+    },
+    {
+      "check": "Quoted record matches: sql_eastus_payg",
+      "result": "PASS",
+      "evidence": "489796ad-f6d1-48d7-83e3-6634f50cdcb8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_eastus_payg",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: vm_eastus_1y",
+      "result": "PASS",
+      "evidence": "1038.0"
+    },
+    {
+      "check": "Quoted record matches: vm_eastus_1y",
+      "result": "PASS",
+      "evidence": "db8c0962-f3f8-5b44-99aa-f3c7c1e668c8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_eastus_1y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_eastus_1y",
+      "result": "PASS",
+      "evidence": "1040.0"
+    },
+    {
+      "check": "Quoted record matches: sql_eastus_1y",
+      "result": "PASS",
+      "evidence": "489796ad-f6d1-48d7-83e3-6634f50cdcb8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_eastus_1y",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: vm_eastus_3y",
+      "result": "PASS",
+      "evidence": "1993.0"
+    },
+    {
+      "check": "Quoted record matches: vm_eastus_3y",
+      "result": "PASS",
+      "evidence": "db8c0962-f3f8-5b44-99aa-f3c7c1e668c8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_eastus_3y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_eastus_3y",
+      "result": "PASS",
+      "evidence": "2160.0"
+    },
+    {
+      "check": "Quoted record matches: sql_eastus_3y",
+      "result": "PASS",
+      "evidence": "489796ad-f6d1-48d7-83e3-6634f50cdcb8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_eastus_3y",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: windows_eastus",
+      "result": "PASS",
+      "evidence": "0.376"
+    },
+    {
+      "check": "Quoted record matches: windows_eastus",
+      "result": "PASS",
+      "evidence": "57bde05c-423b-50c9-8e57-d668c0481cce"
+    },
+    {
+      "check": "No Spot/DevTest substitution: windows_eastus",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series Windows"
+    },
+    {
+      "check": "Price nonnegative: sql_storage_eastus",
+      "result": "PASS",
+      "evidence": "0.25"
+    },
+    {
+      "check": "Quoted record matches: sql_storage_eastus",
+      "result": "PASS",
+      "evidence": "02c84d16-dfaa-5020-9975-35f6f809f4b2"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_storage_eastus",
+      "result": "PASS",
+      "evidence": "SQL Database Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: sql_backup_eastus",
+      "result": "PASS",
+      "evidence": "0.2"
+    },
+    {
+      "check": "Quoted record matches: sql_backup_eastus",
+      "result": "PASS",
+      "evidence": "615c784c-d0bd-5326-96a7-95a94f5c3153"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_backup_eastus",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: sql_io_eastus",
+      "result": "PASS",
+      "evidence": "0.2"
+    },
+    {
+      "check": "Quoted record matches: sql_io_eastus",
+      "result": "PASS",
+      "evidence": "84f02a43-daa0-45f7-9711-290f086a845c"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_io_eastus",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: disk_eastus",
+      "result": "PASS",
+      "evidence": "9.6"
+    },
+    {
+      "check": "Quoted record matches: disk_eastus",
+      "result": "PASS",
+      "evidence": "a97f31a2-0fb1-4d64-bb43-a2399dd31f0b"
+    },
+    {
+      "check": "No Spot/DevTest substitution: disk_eastus",
+      "result": "PASS",
+      "evidence": "Standard SSD Managed Disks"
+    },
+    {
+      "check": "Price nonnegative: vm_westeurope_payg",
+      "result": "PASS",
+      "evidence": "0.23"
+    },
+    {
+      "check": "Quoted record matches: vm_westeurope_payg",
+      "result": "PASS",
+      "evidence": "1ab41620-5ffa-51b3-ac16-6416f9f747a9"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_westeurope_payg",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_westeurope_payg",
+      "result": "PASS",
+      "evidence": "0.200926"
+    },
+    {
+      "check": "Quoted record matches: sql_westeurope_payg",
+      "result": "PASS",
+      "evidence": "0443a95d-d288-4277-9edb-97dcae9a9491"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_westeurope_payg",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: vm_westeurope_1y",
+      "result": "PASS",
+      "evidence": "1243.0"
+    },
+    {
+      "check": "Quoted record matches: vm_westeurope_1y",
+      "result": "PASS",
+      "evidence": "1ab41620-5ffa-51b3-ac16-6416f9f747a9"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_westeurope_1y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_westeurope_1y",
+      "result": "PASS",
+      "evidence": "1144.0"
+    },
+    {
+      "check": "Quoted record matches: sql_westeurope_1y",
+      "result": "PASS",
+      "evidence": "0443a95d-d288-4277-9edb-97dcae9a9491"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_westeurope_1y",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: vm_westeurope_3y",
+      "result": "PASS",
+      "evidence": "2388.0"
+    },
+    {
+      "check": "Quoted record matches: vm_westeurope_3y",
+      "result": "PASS",
+      "evidence": "1ab41620-5ffa-51b3-ac16-6416f9f747a9"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_westeurope_3y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_westeurope_3y",
+      "result": "PASS",
+      "evidence": "2376.0"
+    },
+    {
+      "check": "Quoted record matches: sql_westeurope_3y",
+      "result": "PASS",
+      "evidence": "0443a95d-d288-4277-9edb-97dcae9a9491"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_westeurope_3y",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: windows_westeurope",
+      "result": "PASS",
+      "evidence": "0.414"
+    },
+    {
+      "check": "Quoted record matches: windows_westeurope",
+      "result": "PASS",
+      "evidence": "62505042-38f9-5fa6-b203-8c62b36eb245"
+    },
+    {
+      "check": "No Spot/DevTest substitution: windows_westeurope",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series Windows"
+    },
+    {
+      "check": "Price nonnegative: sql_storage_westeurope",
+      "result": "PASS",
+      "evidence": "0.301724"
+    },
+    {
+      "check": "Quoted record matches: sql_storage_westeurope",
+      "result": "PASS",
+      "evidence": "77d6a2a8-bc27-551a-b0cb-4fff5f67ac60"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_storage_westeurope",
+      "result": "PASS",
+      "evidence": "SQL Database Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: sql_backup_westeurope",
+      "result": "PASS",
+      "evidence": "0.238"
+    },
+    {
+      "check": "Quoted record matches: sql_backup_westeurope",
+      "result": "PASS",
+      "evidence": "a5939468-7f48-5ea6-ad80-77be63fcab76"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_backup_westeurope",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: sql_io_westeurope",
+      "result": "PASS",
+      "evidence": "0.238"
+    },
+    {
+      "check": "Quoted record matches: sql_io_westeurope",
+      "result": "PASS",
+      "evidence": "74356492-876e-4336-b2b5-f12ab94f8333"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_io_westeurope",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: disk_westeurope",
+      "result": "PASS",
+      "evidence": "9.6"
+    },
+    {
+      "check": "Quoted record matches: disk_westeurope",
+      "result": "PASS",
+      "evidence": "97258e5f-0fa0-47c0-accd-96b7aee6361f"
+    },
+    {
+      "check": "No Spot/DevTest substitution: disk_westeurope",
+      "result": "PASS",
+      "evidence": "Standard SSD Managed Disks"
+    },
+    {
+      "check": "Price nonnegative: vm_southeastasia_payg",
+      "result": "PASS",
+      "evidence": "0.24"
+    },
+    {
+      "check": "Quoted record matches: vm_southeastasia_payg",
+      "result": "PASS",
+      "evidence": "f4cf6544-ee03-5ddc-9cc0-25d5cb4c48b0"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_southeastasia_payg",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_southeastasia_payg",
+      "result": "PASS",
+      "evidence": "0.217365"
+    },
+    {
+      "check": "Quoted record matches: sql_southeastasia_payg",
+      "result": "PASS",
+      "evidence": "6685385f-6623-4bcb-b734-f3f2052623cc"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_southeastasia_payg",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: vm_southeastasia_1y",
+      "result": "PASS",
+      "evidence": "1297.0"
+    },
+    {
+      "check": "Quoted record matches: vm_southeastasia_1y",
+      "result": "PASS",
+      "evidence": "f4cf6544-ee03-5ddc-9cc0-25d5cb4c48b0"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_southeastasia_1y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_southeastasia_1y",
+      "result": "PASS",
+      "evidence": "1238.0"
+    },
+    {
+      "check": "Quoted record matches: sql_southeastasia_1y",
+      "result": "PASS",
+      "evidence": "6685385f-6623-4bcb-b734-f3f2052623cc"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_southeastasia_1y",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: vm_southeastasia_3y",
+      "result": "PASS",
+      "evidence": "2491.0"
+    },
+    {
+      "check": "Quoted record matches: vm_southeastasia_3y",
+      "result": "PASS",
+      "evidence": "f4cf6544-ee03-5ddc-9cc0-25d5cb4c48b0"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vm_southeastasia_3y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: sql_southeastasia_3y",
+      "result": "PASS",
+      "evidence": "2571.0"
+    },
+    {
+      "check": "Quoted record matches: sql_southeastasia_3y",
+      "result": "PASS",
+      "evidence": "6685385f-6623-4bcb-b734-f3f2052623cc"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_southeastasia_3y",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB/Elastic Pool Hyperscale - Compute Gen5"
+    },
+    {
+      "check": "Price nonnegative: windows_southeastasia",
+      "result": "PASS",
+      "evidence": "0.424"
+    },
+    {
+      "check": "Quoted record matches: windows_southeastasia",
+      "result": "PASS",
+      "evidence": "3b87821a-7698-5c82-b378-d6676eb657f0"
+    },
+    {
+      "check": "No Spot/DevTest substitution: windows_southeastasia",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series Windows"
+    },
+    {
+      "check": "Price nonnegative: sql_storage_southeastasia",
+      "result": "PASS",
+      "evidence": "0.301724"
+    },
+    {
+      "check": "Quoted record matches: sql_storage_southeastasia",
+      "result": "PASS",
+      "evidence": "1097965d-c8bd-57fa-9406-97b7392ebb4f"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_storage_southeastasia",
+      "result": "PASS",
+      "evidence": "SQL Database Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: sql_backup_southeastasia",
+      "result": "PASS",
+      "evidence": "0.24"
+    },
+    {
+      "check": "Quoted record matches: sql_backup_southeastasia",
+      "result": "PASS",
+      "evidence": "7541dfa3-7f4f-517a-b448-092d1be5fa47"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_backup_southeastasia",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: sql_io_southeastasia",
+      "result": "PASS",
+      "evidence": "0.24"
+    },
+    {
+      "check": "Quoted record matches: sql_io_southeastasia",
+      "result": "PASS",
+      "evidence": "5f6ee383-67de-4b80-af30-a7b75644d0ff"
+    },
+    {
+      "check": "No Spot/DevTest substitution: sql_io_southeastasia",
+      "result": "PASS",
+      "evidence": "SQL Database SingleDB Hyperscale - Storage"
+    },
+    {
+      "check": "Price nonnegative: disk_southeastasia",
+      "result": "PASS",
+      "evidence": "9.6"
+    },
+    {
+      "check": "Quoted record matches: disk_southeastasia",
+      "result": "PASS",
+      "evidence": "b9b5d03a-3b1d-4771-870d-0b72a7eec192"
+    },
+    {
+      "check": "No Spot/DevTest substitution: disk_southeastasia",
+      "result": "PASS",
+      "evidence": "Standard SSD Managed Disks"
+    },
+    {
+      "check": "Price nonnegative: batch_payg",
+      "result": "PASS",
+      "evidence": "0.384"
+    },
+    {
+      "check": "Quoted record matches: batch_payg",
+      "result": "PASS",
+      "evidence": "17a4cba9-d983-5344-a8ef-ac7c8e0d34af"
+    },
+    {
+      "check": "No Spot/DevTest substitution: batch_payg",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: batch_1y",
+      "result": "PASS",
+      "evidence": "2075.0"
+    },
+    {
+      "check": "Quoted record matches: batch_1y",
+      "result": "PASS",
+      "evidence": "17a4cba9-d983-5344-a8ef-ac7c8e0d34af"
+    },
+    {
+      "check": "No Spot/DevTest substitution: batch_1y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: batch_3y",
+      "result": "PASS",
+      "evidence": "3986.0"
+    },
+    {
+      "check": "Quoted record matches: batch_3y",
+      "result": "PASS",
+      "evidence": "17a4cba9-d983-5344-a8ef-ac7c8e0d34af"
+    },
+    {
+      "check": "No Spot/DevTest substitution: batch_3y",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series"
+    },
+    {
+      "check": "Price nonnegative: temp_windows_d8",
+      "result": "PASS",
+      "evidence": "0.752"
+    },
+    {
+      "check": "Quoted record matches: temp_windows_d8",
+      "result": "PASS",
+      "evidence": "91be1b25-5b47-5a7f-893b-0645863ada29"
+    },
+    {
+      "check": "No Spot/DevTest substitution: temp_windows_d8",
+      "result": "PASS",
+      "evidence": "Virtual Machines Dsv5 Series Windows"
+    },
+    {
+      "check": "Price nonnegative: gpu",
+      "result": "PASS",
+      "evidence": "0.526"
+    },
+    {
+      "check": "Quoted record matches: gpu",
+      "result": "PASS",
+      "evidence": "b04b4869-b6a3-527b-aec2-650a6fb07224"
+    },
+    {
+      "check": "No Spot/DevTest substitution: gpu",
+      "result": "PASS",
+      "evidence": "Virtual Machines NCasT4 v3 Series"
+    },
+    {
+      "check": "Price nonnegative: cosmos_ru",
+      "result": "PASS",
+      "evidence": "0.008"
+    },
+    {
+      "check": "Quoted record matches: cosmos_ru",
+      "result": "PASS",
+      "evidence": "65d4ded2-41ae-43a8-bb68-3c200e1ba864"
+    },
+    {
+      "check": "No Spot/DevTest substitution: cosmos_ru",
+      "result": "PASS",
+      "evidence": "Azure Cosmos DB"
+    },
+    {
+      "check": "Price nonnegative: cosmos_storage",
+      "result": "PASS",
+      "evidence": "0.25"
+    },
+    {
+      "check": "Quoted record matches: cosmos_storage",
+      "result": "PASS",
+      "evidence": "56f07b6a-c7d9-490f-a196-a7ee08e28712"
+    },
+    {
+      "check": "No Spot/DevTest substitution: cosmos_storage",
+      "result": "PASS",
+      "evidence": "Azure Cosmos DB"
+    },
+    {
+      "check": "Price nonnegative: blob_eastus",
+      "result": "PASS",
+      "evidence": "0.0468"
+    },
+    {
+      "check": "Quoted record matches: blob_eastus",
+      "result": "PASS",
+      "evidence": "a69c6abe-9f19-4891-a7b5-2f4d7b46cafa"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_eastus",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_westeurope",
+      "result": "PASS",
+      "evidence": "0.046"
+    },
+    {
+      "check": "Quoted record matches: blob_westeurope",
+      "result": "PASS",
+      "evidence": "06c45bd0-f40b-4a9b-98fd-93d6173e019e"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_westeurope",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_southeastasia",
+      "result": "PASS",
+      "evidence": "0.04"
+    },
+    {
+      "check": "Quoted record matches: blob_southeastasia",
+      "result": "PASS",
+      "evidence": "a05f8b31-228c-4826-862c-6cdb578784a3"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_southeastasia",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_writes",
+      "result": "PASS",
+      "evidence": "0.1"
+    },
+    {
+      "check": "Quoted record matches: blob_writes",
+      "result": "PASS",
+      "evidence": "7b5c8556-24e2-42bc-8f46-da45ac53aee4"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_writes",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_writes_eastus",
+      "result": "PASS",
+      "evidence": "0.1175"
+    },
+    {
+      "check": "Quoted record matches: blob_writes_eastus",
+      "result": "PASS",
+      "evidence": "33fade1a-678d-4948-961e-9775837f9f8f"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_writes_eastus",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_writes_westeurope",
+      "result": "PASS",
+      "evidence": "0.1175"
+    },
+    {
+      "check": "Quoted record matches: blob_writes_westeurope",
+      "result": "PASS",
+      "evidence": "30e93c9f-5dd5-40eb-82c2-748e98e3d5cd"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_writes_westeurope",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_writes_southeastasia",
+      "result": "PASS",
+      "evidence": "0.1"
+    },
+    {
+      "check": "Quoted record matches: blob_writes_southeastasia",
+      "result": "PASS",
+      "evidence": "8fc68c4c-2c37-4079-8493-fea12df31298"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_writes_southeastasia",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: blob_reads",
+      "result": "PASS",
+      "evidence": "0.004"
+    },
+    {
+      "check": "Quoted record matches: blob_reads",
+      "result": "PASS",
+      "evidence": "c5248cf8-ecba-4807-9304-6a8f14b5805a"
+    },
+    {
+      "check": "No Spot/DevTest substitution: blob_reads",
+      "result": "PASS",
+      "evidence": "General Block Blob v2"
+    },
+    {
+      "check": "Price nonnegative: disk_ops",
+      "result": "PASS",
+      "evidence": "0.002"
+    },
+    {
+      "check": "Quoted record matches: disk_ops",
+      "result": "PASS",
+      "evidence": "ce957933-8287-4f8b-83ee-53a5cbe056d9"
+    },
+    {
+      "check": "No Spot/DevTest substitution: disk_ops",
+      "result": "PASS",
+      "evidence": "Standard SSD Managed Disks"
+    },
+    {
+      "check": "Price nonnegative: warehouse",
+      "result": "PASS",
+      "evidence": "1.51"
+    },
+    {
+      "check": "Quoted record matches: warehouse",
+      "result": "PASS",
+      "evidence": "cc5e0b3e-9ebc-451a-8b78-904f230e975b"
+    },
+    {
+      "check": "No Spot/DevTest substitution: warehouse",
+      "result": "PASS",
+      "evidence": "Azure Synapse Analytics Dedicated SQL Pool"
+    },
+    {
+      "check": "Price nonnegative: warehouse_storage",
+      "result": "PASS",
+      "evidence": "23.0"
+    },
+    {
+      "check": "Quoted record matches: warehouse_storage",
+      "result": "PASS",
+      "evidence": "b1ab61bd-26ad-4681-b3db-eb59b1280ac7"
+    },
+    {
+      "check": "No Spot/DevTest substitution: warehouse_storage",
+      "result": "PASS",
+      "evidence": "Azure Synapse Analytics SQL Provisioned Storage"
+    },
+    {
+      "check": "Price nonnegative: warehouse_geo_backup",
+      "result": "PASS",
+      "evidence": "0.0562"
+    },
+    {
+      "check": "Quoted record matches: warehouse_geo_backup",
+      "result": "PASS",
+      "evidence": "a85efaf0-70f9-5a78-b41e-ac2d8569aad6"
+    },
+    {
+      "check": "No Spot/DevTest substitution: warehouse_geo_backup",
+      "result": "PASS",
+      "evidence": "Azure Synapse Analytics SQL Provisioned Disaster Recovery Storage"
+    },
+    {
+      "check": "Price nonnegative: pipeline_copy",
+      "result": "PASS",
+      "evidence": "0.25"
+    },
+    {
+      "check": "Quoted record matches: pipeline_copy",
+      "result": "PASS",
+      "evidence": "28006887-5164-4f54-bfa1-1486d6596193"
+    },
+    {
+      "check": "No Spot/DevTest substitution: pipeline_copy",
+      "result": "PASS",
+      "evidence": "Azure Synapse Analytics Pipelines"
+    },
+    {
+      "check": "Price nonnegative: pipeline_selfhost",
+      "result": "PASS",
+      "evidence": "0.1"
+    },
+    {
+      "check": "Quoted record matches: pipeline_selfhost",
+      "result": "PASS",
+      "evidence": "b3b34e3c-34bf-45dd-abf4-845dd4f1c981"
+    },
+    {
+      "check": "No Spot/DevTest substitution: pipeline_selfhost",
+      "result": "PASS",
+      "evidence": "Azure Synapse Analytics Pipelines"
+    },
+    {
+      "check": "Price nonnegative: pipeline_runs",
+      "result": "PASS",
+      "evidence": "1.0"
+    },
+    {
+      "check": "Quoted record matches: pipeline_runs",
+      "result": "PASS",
+      "evidence": "3fe1fb0a-7358-4831-9042-7e0a7a5f4e2a"
+    },
+    {
+      "check": "No Spot/DevTest substitution: pipeline_runs",
+      "result": "PASS",
+      "evidence": "Azure Synapse Analytics Pipelines"
+    },
+    {
+      "check": "Price nonnegative: lb_hour",
+      "result": "PASS",
+      "evidence": "0.025"
+    },
+    {
+      "check": "Quoted record matches: lb_hour",
+      "result": "PASS",
+      "evidence": "27827eb0-7f60-4928-940b-f5fe15e7a4cb"
+    },
+    {
+      "check": "No Spot/DevTest substitution: lb_hour",
+      "result": "PASS",
+      "evidence": "Load Balancer"
+    },
+    {
+      "check": "Price nonnegative: lb_gb",
+      "result": "PASS",
+      "evidence": "0.005"
+    },
+    {
+      "check": "Quoted record matches: lb_gb",
+      "result": "PASS",
+      "evidence": "dfc7cc11-fbe2-41c8-b6fa-24a574223938"
+    },
+    {
+      "check": "No Spot/DevTest substitution: lb_gb",
+      "result": "PASS",
+      "evidence": "Load Balancer"
+    },
+    {
+      "check": "Price nonnegative: nat_hour",
+      "result": "PASS",
+      "evidence": "0.045"
+    },
+    {
+      "check": "Quoted record matches: nat_hour",
+      "result": "PASS",
+      "evidence": "ae30040a-67f5-485b-b0f4-a6ef50504d9c"
+    },
+    {
+      "check": "No Spot/DevTest substitution: nat_hour",
+      "result": "PASS",
+      "evidence": "NAT Gateway"
+    },
+    {
+      "check": "Price nonnegative: nat_gb",
+      "result": "PASS",
+      "evidence": "0.045"
+    },
+    {
+      "check": "Quoted record matches: nat_gb",
+      "result": "PASS",
+      "evidence": "d32b6352-b66b-4c4c-8f21-60e94058e04d"
+    },
+    {
+      "check": "No Spot/DevTest substitution: nat_gb",
+      "result": "PASS",
+      "evidence": "NAT Gateway"
+    },
+    {
+      "check": "Price nonnegative: frontdoor_base",
+      "result": "PASS",
+      "evidence": "330.0"
+    },
+    {
+      "check": "Quoted record matches: frontdoor_base",
+      "result": "PASS",
+      "evidence": "7c765472-0673-5e48-bcb0-5a7b34c6330d"
+    },
+    {
+      "check": "No Spot/DevTest substitution: frontdoor_base",
+      "result": "PASS",
+      "evidence": "Azure Front Door"
+    },
+    {
+      "check": "Price nonnegative: public_ip",
+      "result": "PASS",
+      "evidence": "0.005"
+    },
+    {
+      "check": "Quoted record matches: public_ip",
+      "result": "PASS",
+      "evidence": "9c150bf9-2bad-430e-a53c-c213804f49ef"
+    },
+    {
+      "check": "No Spot/DevTest substitution: public_ip",
+      "result": "PASS",
+      "evidence": "IP Addresses"
+    },
+    {
+      "check": "Price nonnegative: vpn",
+      "result": "PASS",
+      "evidence": "0.21"
+    },
+    {
+      "check": "Quoted record matches: vpn",
+      "result": "PASS",
+      "evidence": "f7f36e66-5b21-445a-9df1-f192e56ed76c"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vpn",
+      "result": "PASS",
+      "evidence": "VPN Gateway"
+    },
+    {
+      "check": "Price nonnegative: private_endpoint",
+      "result": "PASS",
+      "evidence": "0.01"
+    },
+    {
+      "check": "Quoted record matches: private_endpoint",
+      "result": "PASS",
+      "evidence": "e6ab7238-e433-4fe0-a2b2-2b2564df2cdb"
+    },
+    {
+      "check": "No Spot/DevTest substitution: private_endpoint",
+      "result": "PASS",
+      "evidence": "Virtual Network Private Link"
+    },
+    {
+      "check": "Price nonnegative: private_ingress",
+      "result": "PASS",
+      "evidence": "0.01"
+    },
+    {
+      "check": "Quoted record matches: private_ingress",
+      "result": "PASS",
+      "evidence": "10caa28b-6479-4852-9eb7-610870cb6417"
+    },
+    {
+      "check": "No Spot/DevTest substitution: private_ingress",
+      "result": "PASS",
+      "evidence": "Virtual Network Private Link"
+    },
+    {
+      "check": "Price nonnegative: private_egress",
+      "result": "PASS",
+      "evidence": "0.01"
+    },
+    {
+      "check": "Quoted record matches: private_egress",
+      "result": "PASS",
+      "evidence": "e7f162f6-7cb8-4cea-ad4f-12cdb5dda25b"
+    },
+    {
+      "check": "No Spot/DevTest substitution: private_egress",
+      "result": "PASS",
+      "evidence": "Virtual Network Private Link"
+    },
+    {
+      "check": "Price nonnegative: private_dns_zone",
+      "result": "PASS",
+      "evidence": "0.5"
+    },
+    {
+      "check": "Quoted record matches: private_dns_zone",
+      "result": "PASS",
+      "evidence": "0b608a26-f611-4232-8192-ce81b6b57194"
+    },
+    {
+      "check": "No Spot/DevTest substitution: private_dns_zone",
+      "result": "PASS",
+      "evidence": "Azure DNS"
+    },
+    {
+      "check": "Price nonnegative: private_dns_query",
+      "result": "PASS",
+      "evidence": "0.4"
+    },
+    {
+      "check": "Quoted record matches: private_dns_query",
+      "result": "PASS",
+      "evidence": "46cff9cb-4b15-4af0-bf41-25143827fef8"
+    },
+    {
+      "check": "No Spot/DevTest substitution: private_dns_query",
+      "result": "PASS",
+      "evidence": "Azure DNS"
+    },
+    {
+      "check": "Price nonnegative: public_dns_zone",
+      "result": "PASS",
+      "evidence": "0.5"
+    },
+    {
+      "check": "Quoted record matches: public_dns_zone",
+      "result": "PASS",
+      "evidence": "8f967c58-b144-4bd7-8882-8bf02767c839"
+    },
+    {
+      "check": "No Spot/DevTest substitution: public_dns_zone",
+      "result": "PASS",
+      "evidence": "Azure DNS"
+    },
+    {
+      "check": "Price nonnegative: public_dns_query",
+      "result": "PASS",
+      "evidence": "0.4"
+    },
+    {
+      "check": "Quoted record matches: public_dns_query",
+      "result": "PASS",
+      "evidence": "d54686f0-77ff-43f3-9e7c-2099030d32a7"
+    },
+    {
+      "check": "No Spot/DevTest substitution: public_dns_query",
+      "result": "PASS",
+      "evidence": "Azure DNS"
+    },
+    {
+      "check": "Price nonnegative: logs",
+      "result": "PASS",
+      "evidence": "2.3"
+    },
+    {
+      "check": "Quoted record matches: logs",
+      "result": "PASS",
+      "evidence": "ffbd06c0-e72e-42b6-b612-f03144b476df"
+    },
+    {
+      "check": "No Spot/DevTest substitution: logs",
+      "result": "PASS",
+      "evidence": "Log Analytics"
+    },
+    {
+      "check": "Price nonnegative: alerts",
+      "result": "PASS",
+      "evidence": "0.1"
+    },
+    {
+      "check": "Quoted record matches: alerts",
+      "result": "PASS",
+      "evidence": "6860c782-bbcc-41ed-a218-fb308dd0942e"
+    },
+    {
+      "check": "No Spot/DevTest substitution: alerts",
+      "result": "PASS",
+      "evidence": "Azure Monitor"
+    },
+    {
+      "check": "Price nonnegative: defender",
+      "result": "PASS",
+      "evidence": "0.00672"
+    },
+    {
+      "check": "Quoted record matches: defender",
+      "result": "PASS",
+      "evidence": "83f23551-9941-53f1-9088-2e6f2c2b17c3"
+    },
+    {
+      "check": "No Spot/DevTest substitution: defender",
+      "result": "PASS",
+      "evidence": "Microsoft Defender for Servers"
+    },
+    {
+      "check": "Price nonnegative: defender_sql",
+      "result": "PASS",
+      "evidence": "15.0"
+    },
+    {
+      "check": "Quoted record matches: defender_sql",
+      "result": "PASS",
+      "evidence": "cb0969aa-aaaa-4d6c-ab4b-7e182fa06aff"
+    },
+    {
+      "check": "No Spot/DevTest substitution: defender_sql",
+      "result": "PASS",
+      "evidence": "Microsoft Defender for SQL"
+    },
+    {
+      "check": "Price nonnegative: vault_ops",
+      "result": "PASS",
+      "evidence": "0.03"
+    },
+    {
+      "check": "Quoted record matches: vault_ops",
+      "result": "PASS",
+      "evidence": "0f824807-2376-435c-95c9-f992b67a07b0"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vault_ops",
+      "result": "PASS",
+      "evidence": "Key Vault"
+    },
+    {
+      "check": "Price nonnegative: vault_rotate",
+      "result": "PASS",
+      "evidence": "1.0"
+    },
+    {
+      "check": "Quoted record matches: vault_rotate",
+      "result": "PASS",
+      "evidence": "531f9663-2e83-5b23-a98e-43278d47bb31"
+    },
+    {
+      "check": "No Spot/DevTest substitution: vault_rotate",
+      "result": "PASS",
+      "evidence": "Key Vault"
+    },
+    {
+      "check": "Price nonnegative: fd_gb_na_eu",
+      "result": "PASS",
+      "evidence": "0.083"
+    },
+    {
+      "check": "Price nonnegative: fd_gb_apac",
+      "result": "PASS",
+      "evidence": "0.115"
+    },
+    {
+      "check": "Price nonnegative: fd_requests_na_eu",
+      "result": "PASS",
+      "evidence": "0.015"
+    },
+    {
+      "check": "Price nonnegative: fd_requests_apac",
+      "result": "PASS",
+      "evidence": "0.0168"
+    },
+    {
+      "check": "Price nonnegative: fd_origin_na_eu",
+      "result": "PASS",
+      "evidence": "0.02"
+    },
+    {
+      "check": "Price nonnegative: fd_origin_apac",
+      "result": "PASS",
+      "evidence": "0.06"
+    },
+    {
+      "check": "Price nonnegative: intercontinental_na_eu",
+      "result": "PASS",
+      "evidence": "0.05"
+    },
+    {
+      "check": "Price nonnegative: ingress",
+      "result": "PASS",
+      "evidence": "0"
+    },
+    {
+      "check": "Price nonnegative: support",
+      "result": "PASS",
+      "evidence": "100"
+    },
+    {
+      "check": "Price nonnegative: cost_management",
+      "result": "PASS",
+      "evidence": "0"
+    },
+    {
+      "check": "Price nonnegative: migrate",
+      "result": "PASS",
+      "evidence": "0"
+    },
+    {
+      "check": "Actual calculator export: Virtual Machines",
+      "result": "PASS",
+      "evidence": "export 553.61111105 vs independent 553.6111111111111111111111111"
+    },
+    {
+      "check": "Actual calculator export: Azure Cosmos DB",
+      "result": "PASS",
+      "evidence": "export 11004 vs independent 11004.000"
+    },
+    {
+      "check": "Actual calculator export: Azure SQL Database",
+      "result": "PASS",
+      "evidence": "export 4383.4688 vs independent 4383.46880"
+    },
+    {
+      "check": "Calculator exported grand total",
+      "result": "PASS",
+      "evidence": "15941.07991105"
+    },
+    {
+      "check": "Calculator actual 3 requested regions",
+      "result": "PASS",
+      "evidence": "Azure Cosmos DB for NoSQL (formerly Core), Standard provisioned throughput (manual), Always-free quantity disabled, Pay as you go, General Purpose, Single Write- East US (Write Region), West Europe, Southeast Asia, 20,000 RUs x 730 Hours, 10,000 GB transactional storage, Analytical storage disabled, 2 copies of periodic backup storage, Dedicated Gateway not enabled"
+    },
+    {
+      "check": "Calculator no free-tier credit",
+      "result": "PASS",
+      "evidence": "Azure Cosmos DB for NoSQL (formerly Core), Standard provisioned throughput (manual), Always-free quantity disabled, Pay as you go, General Purpose, Single Write- East US (Write Region), West Europe, Southeast Asia, 20,000 RUs x 730 Hours, 10,000 GB transactional storage, Analytical storage disabled, 2 copies of periodic backup storage, Dedicated Gateway not enabled"
+    },
+    {
+      "check": "CSV grand total: baseline",
+      "result": "PASS",
+      "evidence": "45858.80"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Web: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1401.60"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / API: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1121.28"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Payment: Windows D4s v5 license included",
+      "result": "PASS",
+      "evidence": "548.96"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "220.80"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "4.60"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "2133.47"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1250.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1000.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1404.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Web: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1679.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / API: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1007.40"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Payment: Windows D4s v5 license included",
+      "result": "PASS",
+      "evidence": "604.44"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "1173.41"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1190.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1380.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: baseline / westeurope / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Web: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1752.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / API: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1051.20"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Payment: Windows D4s v5 license included",
+      "result": "PASS",
+      "evidence": "619.04"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "1269.41"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "575.00"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "16.80"
+    },
+    {
+      "check": "Quantity times price: baseline / southeastasia / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "6.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Scheduled batch: 2 Linux D8s v5",
+      "result": "PASS",
+      "evidence": "560.64"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / GPU training: NC4as T4 v3",
+      "result": "PASS",
+      "evidence": "383.98"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Synapse dedicated SQL pool DW100c",
+      "result": "PASS",
+      "evidence": "1102.30"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Synapse dedicated warehouse storage and snapshots",
+      "result": "PASS",
+      "evidence": "414.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Synapse native geo-redundant DR backup",
+      "result": "PASS",
+      "evidence": "843.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Synapse pipeline data movement",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Synapse orchestration",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: baseline / Global / Front Door Premium base / WAF",
+      "result": "PASS",
+      "evidence": "330.00"
+    },
+    {
+      "check": "Quantity times price: baseline / Global / Customer-managed private endpoints",
+      "result": "PASS",
+      "evidence": "80.30"
+    },
+    {
+      "check": "Quantity times price: baseline / All regions / Private-endpoint inbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: baseline / All regions / Private-endpoint outbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: baseline / Global / Private DNS zones",
+      "result": "PASS",
+      "evidence": "2.50"
+    },
+    {
+      "check": "Quantity times price: baseline / Global / Private DNS queries",
+      "result": "PASS",
+      "evidence": "12.00"
+    },
+    {
+      "check": "Quantity times price: baseline / Global / Public DNS zone",
+      "result": "PASS",
+      "evidence": "0.50"
+    },
+    {
+      "check": "Quantity times price: baseline / Global / Public DNS queries",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus -> Europe + Asia / Cosmos cross-continent replication",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus -> Europe + Asia / Independent Blob backup cross-continent delta copies",
+      "result": "PASS",
+      "evidence": "300.00"
+    },
+    {
+      "check": "Quantity times price: baseline / All regions / Intra-region cross-zone network allowance",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: baseline / All regions / Paired-region Blob geo-replication bandwidth allowance",
+      "result": "PASS",
+      "evidence": "450.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Central Log Analytics ingestion",
+      "result": "PASS",
+      "evidence": "908.50"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Billable metric-alert time series",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: baseline / All regions / Defender for Servers Plan 1",
+      "result": "PASS",
+      "evidence": "289.43"
+    },
+    {
+      "check": "Quantity times price: baseline / 3 logical SQL servers + Synapse / Defender for SQL",
+      "result": "PASS",
+      "evidence": "60.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Key Vault standard operations",
+      "result": "PASS",
+      "evidence": "9.00"
+    },
+    {
+      "check": "Quantity times price: baseline / eastus / Key Vault automatic key rotations",
+      "result": "PASS",
+      "evidence": "3.00"
+    },
+    {
+      "check": "Quantity times price: baseline / Subscription / Azure Standard support",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: baseline / Subscription / Cost Management, budgets and tags",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "CSV grand total: scheduled",
+      "result": "PASS",
+      "evidence": "43316.66"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Web: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1401.60"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / API: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "748.03"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Payment: Windows D4s v5 license included",
+      "result": "PASS",
+      "evidence": "548.96"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "220.80"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "4.60"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "2133.47"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1250.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1000.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1404.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Web: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1679.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / API: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "672.06"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Payment: Windows D4s v5 license included",
+      "result": "PASS",
+      "evidence": "604.44"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "1173.41"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1190.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1380.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / westeurope / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Web: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1752.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / API: D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "701.28"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Payment: Windows D4s v5 license included",
+      "result": "PASS",
+      "evidence": "619.04"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "1269.41"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "575.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "16.80"
+    },
+    {
+      "check": "Quantity times price: scheduled / southeastasia / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "6.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Scheduled batch: 2 Linux D8s v5",
+      "result": "PASS",
+      "evidence": "168.96"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / GPU training: NC4as T4 v3",
+      "result": "PASS",
+      "evidence": "105.20"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Synapse dedicated SQL pool DW100c",
+      "result": "PASS",
+      "evidence": "332.20"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Synapse dedicated warehouse storage and snapshots",
+      "result": "PASS",
+      "evidence": "414.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Synapse native geo-redundant DR backup",
+      "result": "PASS",
+      "evidence": "843.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Synapse pipeline data movement",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Synapse orchestration",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / Global / Front Door Premium base / WAF",
+      "result": "PASS",
+      "evidence": "330.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / Global / Customer-managed private endpoints",
+      "result": "PASS",
+      "evidence": "80.30"
+    },
+    {
+      "check": "Quantity times price: scheduled / All regions / Private-endpoint inbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / All regions / Private-endpoint outbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / Global / Private DNS zones",
+      "result": "PASS",
+      "evidence": "2.50"
+    },
+    {
+      "check": "Quantity times price: scheduled / Global / Private DNS queries",
+      "result": "PASS",
+      "evidence": "12.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / Global / Public DNS zone",
+      "result": "PASS",
+      "evidence": "0.50"
+    },
+    {
+      "check": "Quantity times price: scheduled / Global / Public DNS queries",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus -> Europe + Asia / Cosmos cross-continent replication",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus -> Europe + Asia / Independent Blob backup cross-continent delta copies",
+      "result": "PASS",
+      "evidence": "300.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / All regions / Intra-region cross-zone network allowance",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / All regions / Paired-region Blob geo-replication bandwidth allowance",
+      "result": "PASS",
+      "evidence": "450.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Central Log Analytics ingestion",
+      "result": "PASS",
+      "evidence": "908.50"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Billable metric-alert time series",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / All regions / Defender for Servers Plan 1",
+      "result": "PASS",
+      "evidence": "246.36"
+    },
+    {
+      "check": "Quantity times price: scheduled / 3 logical SQL servers + Synapse / Defender for SQL",
+      "result": "PASS",
+      "evidence": "60.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Key Vault standard operations",
+      "result": "PASS",
+      "evidence": "9.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / eastus / Key Vault automatic key rotations",
+      "result": "PASS",
+      "evidence": "3.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / Subscription / Azure Standard support",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: scheduled / Subscription / Cost Management, budgets and tags",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "CSV grand total: optimized",
+      "result": "PASS",
+      "evidence": "38884.98"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "865.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "346.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "187.39"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "173.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "268.64"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "220.80"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "4.60"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "1386.67"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1250.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1000.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1404.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1035.83"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "310.75"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "168.36"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "207.17"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "268.64"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "762.67"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1190.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1380.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: optimized / westeurope / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1080.83"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "324.25"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "175.68"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "216.17"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "268.64"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "825.33"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "575.00"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "16.80"
+    },
+    {
+      "check": "Quantity times price: optimized / southeastasia / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "6.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Scheduled batch: 2 Linux D8s v5",
+      "result": "PASS",
+      "evidence": "168.96"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / GPU training: NC4as T4 v3",
+      "result": "PASS",
+      "evidence": "105.20"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Synapse dedicated SQL pool DW100c",
+      "result": "PASS",
+      "evidence": "332.20"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Synapse dedicated warehouse storage and snapshots",
+      "result": "PASS",
+      "evidence": "414.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Synapse native geo-redundant DR backup",
+      "result": "PASS",
+      "evidence": "843.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Synapse pipeline data movement",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Synapse orchestration",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized / Global / Front Door Premium base / WAF",
+      "result": "PASS",
+      "evidence": "330.00"
+    },
+    {
+      "check": "Quantity times price: optimized / Global / Customer-managed private endpoints",
+      "result": "PASS",
+      "evidence": "80.30"
+    },
+    {
+      "check": "Quantity times price: optimized / All regions / Private-endpoint inbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: optimized / All regions / Private-endpoint outbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: optimized / Global / Private DNS zones",
+      "result": "PASS",
+      "evidence": "2.50"
+    },
+    {
+      "check": "Quantity times price: optimized / Global / Private DNS queries",
+      "result": "PASS",
+      "evidence": "12.00"
+    },
+    {
+      "check": "Quantity times price: optimized / Global / Public DNS zone",
+      "result": "PASS",
+      "evidence": "0.50"
+    },
+    {
+      "check": "Quantity times price: optimized / Global / Public DNS queries",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus -> Europe + Asia / Cosmos cross-continent replication",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus -> Europe + Asia / Independent Blob backup cross-continent delta copies",
+      "result": "PASS",
+      "evidence": "300.00"
+    },
+    {
+      "check": "Quantity times price: optimized / All regions / Intra-region cross-zone network allowance",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: optimized / All regions / Paired-region Blob geo-replication bandwidth allowance",
+      "result": "PASS",
+      "evidence": "450.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Central Log Analytics ingestion",
+      "result": "PASS",
+      "evidence": "908.50"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Billable metric-alert time series",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized / All regions / Defender for Servers Plan 1",
+      "result": "PASS",
+      "evidence": "246.36"
+    },
+    {
+      "check": "Quantity times price: optimized / 3 logical SQL servers + Synapse / Defender for SQL",
+      "result": "PASS",
+      "evidence": "60.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Key Vault standard operations",
+      "result": "PASS",
+      "evidence": "9.00"
+    },
+    {
+      "check": "Quantity times price: optimized / eastus / Key Vault automatic key rotations",
+      "result": "PASS",
+      "evidence": "3.00"
+    },
+    {
+      "check": "Quantity times price: optimized / Subscription / Azure Standard support",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized / Subscription / Cost Management, budgets and tags",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "CSV grand total: optimized_3y",
+      "result": "PASS",
+      "evidence": "36329.32"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "553.61"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "221.44"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "187.39"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "110.72"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "268.64"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "220.80"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "4.60"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "960.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1250.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1000.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1404.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "663.33"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "199.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "168.36"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "132.67"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "268.64"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "528.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1190.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1380.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / westeurope / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "691.94"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "207.58"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "175.68"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "138.39"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "268.64"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "571.33"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "575.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "16.80"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / southeastasia / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "6.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Scheduled batch: 2 Linux D8s v5",
+      "result": "PASS",
+      "evidence": "168.96"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / GPU training: NC4as T4 v3",
+      "result": "PASS",
+      "evidence": "105.20"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Synapse dedicated SQL pool DW100c",
+      "result": "PASS",
+      "evidence": "332.20"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Synapse dedicated warehouse storage and snapshots",
+      "result": "PASS",
+      "evidence": "414.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Synapse native geo-redundant DR backup",
+      "result": "PASS",
+      "evidence": "843.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Synapse pipeline data movement",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Synapse orchestration",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Global / Front Door Premium base / WAF",
+      "result": "PASS",
+      "evidence": "330.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Global / Customer-managed private endpoints",
+      "result": "PASS",
+      "evidence": "80.30"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / All regions / Private-endpoint inbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / All regions / Private-endpoint outbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Global / Private DNS zones",
+      "result": "PASS",
+      "evidence": "2.50"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Global / Private DNS queries",
+      "result": "PASS",
+      "evidence": "12.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Global / Public DNS zone",
+      "result": "PASS",
+      "evidence": "0.50"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Global / Public DNS queries",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus -> Europe + Asia / Cosmos cross-continent replication",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus -> Europe + Asia / Independent Blob backup cross-continent delta copies",
+      "result": "PASS",
+      "evidence": "300.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / All regions / Intra-region cross-zone network allowance",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / All regions / Paired-region Blob geo-replication bandwidth allowance",
+      "result": "PASS",
+      "evidence": "450.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Central Log Analytics ingestion",
+      "result": "PASS",
+      "evidence": "908.50"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Billable metric-alert time series",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / All regions / Defender for Servers Plan 1",
+      "result": "PASS",
+      "evidence": "246.36"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / 3 logical SQL servers + Synapse / Defender for SQL",
+      "result": "PASS",
+      "evidence": "60.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Key Vault standard operations",
+      "result": "PASS",
+      "evidence": "9.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / eastus / Key Vault automatic key rotations",
+      "result": "PASS",
+      "evidence": "3.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Subscription / Azure Standard support",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_3y / Subscription / Cost Management, budgets and tags",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "CSV grand total: optimized_ahb_if_eligible",
+      "result": "PASS",
+      "evidence": "38079.06"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "865.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "346.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "187.39"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "173.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "220.80"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "4.60"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "1386.67"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1250.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1000.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1404.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1035.83"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "310.75"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "168.36"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "207.17"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "762.67"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1190.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1380.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "117.50"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "415.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "15.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / westeurope / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Web: reserved D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "1080.83"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / API: reserved off-peak D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "324.25"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / API: PAYG peak burst D4s v5 Linux",
+      "result": "PASS",
+      "evidence": "175.68"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Payment: reserved D4s v5 compute",
+      "result": "PASS",
+      "evidence": "216.17"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Payment: Windows OS license",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / 128 GiB E10 LRS OS disks",
+      "result": "PASS",
+      "evidence": "172.80"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Managed-disk transactions",
+      "result": "PASS",
+      "evidence": "3.60"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / SQL Hyperscale Gen5 compute",
+      "result": "PASS",
+      "evidence": "825.33"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / SQL Hyperscale allocated storage",
+      "result": "PASS",
+      "evidence": "1508.62"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / SQL geo-redundant PITR backup allowance",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Cosmos DB single-write manual throughput",
+      "result": "PASS",
+      "evidence": "1168.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Cosmos DB data and index storage",
+      "result": "PASS",
+      "evidence": "2500.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Independent full logical backup set: Blob",
+      "result": "PASS",
+      "evidence": "1200.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Blob write operation budget",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Blob read operation budget",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Standard regional load balancer",
+      "result": "PASS",
+      "evidence": "18.25"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Load-balancer processed data",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / NAT Gateway",
+      "result": "PASS",
+      "evidence": "32.85"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / NAT processed data",
+      "result": "PASS",
+      "evidence": "45.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Public IPs: LB + NAT",
+      "result": "PASS",
+      "evidence": "7.30"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Front Door Premium CDN egress",
+      "result": "PASS",
+      "evidence": "575.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Front Door Premium requests",
+      "result": "PASS",
+      "evidence": "16.80"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / southeastasia / Front Door edge-to-origin requests",
+      "result": "PASS",
+      "evidence": "6.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Scheduled batch: 2 Linux D8s v5",
+      "result": "PASS",
+      "evidence": "168.96"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / GPU training: NC4as T4 v3",
+      "result": "PASS",
+      "evidence": "105.20"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Synapse dedicated SQL pool DW100c",
+      "result": "PASS",
+      "evidence": "332.20"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Synapse dedicated warehouse storage and snapshots",
+      "result": "PASS",
+      "evidence": "414.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Synapse native geo-redundant DR backup",
+      "result": "PASS",
+      "evidence": "843.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Synapse pipeline data movement",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Synapse orchestration",
+      "result": "PASS",
+      "evidence": "10.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Global / Front Door Premium base / WAF",
+      "result": "PASS",
+      "evidence": "330.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Global / Customer-managed private endpoints",
+      "result": "PASS",
+      "evidence": "80.30"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / All regions / Private-endpoint inbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / All regions / Private-endpoint outbound data",
+      "result": "PASS",
+      "evidence": "30.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Global / Private DNS zones",
+      "result": "PASS",
+      "evidence": "2.50"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Global / Private DNS queries",
+      "result": "PASS",
+      "evidence": "12.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Global / Public DNS zone",
+      "result": "PASS",
+      "evidence": "0.50"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Global / Public DNS queries",
+      "result": "PASS",
+      "evidence": "4.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus -> Europe + Asia / Cosmos cross-continent replication",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus -> Europe + Asia / Independent Blob backup cross-continent delta copies",
+      "result": "PASS",
+      "evidence": "300.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / All regions / Intra-region cross-zone network allowance",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / All regions / Paired-region Blob geo-replication bandwidth allowance",
+      "result": "PASS",
+      "evidence": "450.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Central Log Analytics ingestion",
+      "result": "PASS",
+      "evidence": "908.50"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Billable metric-alert time series",
+      "result": "PASS",
+      "evidence": "2.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / All regions / Defender for Servers Plan 1",
+      "result": "PASS",
+      "evidence": "246.36"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / 3 logical SQL servers + Synapse / Defender for SQL",
+      "result": "PASS",
+      "evidence": "60.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Key Vault standard operations",
+      "result": "PASS",
+      "evidence": "9.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / eastus / Key Vault automatic key rotations",
+      "result": "PASS",
+      "evidence": "3.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Subscription / Azure Standard support",
+      "result": "PASS",
+      "evidence": "100.00"
+    },
+    {
+      "check": "Quantity times price: optimized_ahb_if_eligible / Subscription / Cost Management, budgets and tags",
+      "result": "PASS",
+      "evidence": "0.00"
+    },
+    {
+      "check": "API actual scheduled VM-hours",
+      "result": "PASS",
+      "evidence": "20 x 244 + 10 x 486 = 9740"
+    },
+    {
+      "check": "Savings are sequential, not added twice",
+      "result": "PASS",
+      "evidence": "baseline -> scheduled -> reservations"
+    },
+    {
+      "check": "License discount isolated",
+      "result": "PASS",
+      "evidence": "6 Windows D4s v5 x 730 x (0.376 - 0.192)"
+    },
+    {
+      "check": "Year 1 operations + management",
+      "result": "PASS",
+      "evidence": "38884.98"
+    },
+    {
+      "check": "Year 1 savings positive",
+      "result": "PASS",
+      "evidence": "45858.80 vs 38884.98"
+    },
+    {
+      "check": "Year 1 Cosmos throughput storage floor",
+      "result": "PASS",
+      "evidence": "20000 RU/s vs 10000 GB"
+    },
+    {
+      "check": "Year 1 first-tier CDN and Blob rates valid",
+      "result": "PASS",
+      "evidence": "Regional quantities stay inside selected rate tiers"
+    },
+    {
+      "check": "Year 1 web minimum preserved",
+      "result": "PASS",
+      "evidence": "At least 10 web VMs per region"
+    },
+    {
+      "check": "Year 1 persisted disks retained",
+      "result": "PASS",
+      "evidence": "59"
+    },
+    {
+      "check": "Year 1 annualization",
+      "result": "PASS",
+      "evidence": "466619.76"
+    },
+    {
+      "check": "Year 1 contingency separate",
+      "result": "PASS",
+      "evidence": "578299.97"
+    },
+    {
+      "check": "Year 2 operations + management",
+      "result": "PASS",
+      "evidence": "48670.30"
+    },
+    {
+      "check": "Year 2 savings positive",
+      "result": "PASS",
+      "evidence": "56809.22 vs 48670.30"
+    },
+    {
+      "check": "Year 2 Cosmos throughput storage floor",
+      "result": "PASS",
+      "evidence": "24000 RU/s vs 13000.0 GB"
+    },
+    {
+      "check": "Year 2 first-tier CDN and Blob rates valid",
+      "result": "PASS",
+      "evidence": "Regional quantities stay inside selected rate tiers"
+    },
+    {
+      "check": "Year 2 web minimum preserved",
+      "result": "PASS",
+      "evidence": "At least 10 web VMs per region"
+    },
+    {
+      "check": "Year 2 persisted disks retained",
+      "result": "PASS",
+      "evidence": "71"
+    },
+    {
+      "check": "Year 2 annualization",
+      "result": "PASS",
+      "evidence": "584043.60"
+    },
+    {
+      "check": "Year 2 contingency separate",
+      "result": "PASS",
+      "evidence": "671650.14"
+    },
+    {
+      "check": "Year 3 operations + management",
+      "result": "PASS",
+      "evidence": "60841.59"
+    },
+    {
+      "check": "Year 3 savings positive",
+      "result": "PASS",
+      "evidence": "70071.28 vs 60841.59"
+    },
+    {
+      "check": "Year 3 Cosmos throughput storage floor",
+      "result": "PASS",
+      "evidence": "28800 RU/s vs 16900.00 GB"
+    },
+    {
+      "check": "Year 3 first-tier CDN and Blob rates valid",
+      "result": "PASS",
+      "evidence": "Regional quantities stay inside selected rate tiers"
+    },
+    {
+      "check": "Year 3 web minimum preserved",
+      "result": "PASS",
+      "evidence": "At least 10 web VMs per region"
+    },
+    {
+      "check": "Year 3 persisted disks retained",
+      "result": "PASS",
+      "evidence": "84"
+    },
+    {
+      "check": "Year 3 annualization",
+      "result": "PASS",
+      "evidence": "730099.08"
+    },
+    {
+      "check": "Year 3 contingency separate",
+      "result": "PASS",
+      "evidence": "839613.94"
+    },
+    {
+      "check": "Migration charged exactly once",
+      "result": "PASS",
+      "evidence": "36249.78"
+    },
+    {
+      "check": "Migration CSV arithmetic",
+      "result": "PASS",
+      "evidence": "36249.78"
+    },
+    {
+      "check": "Source snapshot and report exclude confirmed AHB assumption",
+      "result": "PASS",
+      "evidence": "Principal plan includes OS licensing"
+    }
+  ],
+  "scope": "Arithmetic, pricing records, actual calculator export and assignment quantities; not a deployed application performance or PCI certification test."
+}

@@ -1,0 +1,16 @@
+item,quantity,rate_key,unit_price,one_time_usd,calculation
+Azure Migrate discovery and assessment,1,migrate,0,0.00,Assess applications and VMs; use the supported Server Migration workflow for app hosts
+Initial 30 TB upload to Azure,30000,ingress,0,0.00,SQL 5 TB + Cosmos 10 TB + warehouse 15 TB; source ISP/egress excluded
+SQL replication / validation temporary Windows D8s v5 hosts,672,temp_windows_d8,0.752,505.34,Two temporary 8-vCPU hosts x 14 days x 24 hours; existing SQL licenses on source/distributor assumed
+Temporary 128 GiB OS disks,0.9333333333333333333333333333,disk_eastus,9.6,8.96,2 disks x $9.60/month x 14/30 month
+Temporary migration data/snapshot staging: 30 TB for 14 days,14000,blob_eastus,0.0468,655.20,Conservative GZRS staging allowance; includes SQL snapshots and load files
+Synapse pipelines self-hosted IR copy,336,pipeline_selfhost,0.1,33.60,336 billed activity-hours; integration runtime hosts costed separately
+Synapse pipelines Azure IR copy,1000,pipeline_copy,0.25,250.00,1000 DIU-hours; independent from byte-ingress charge
+Migration pipeline orchestration,10,pipeline_runs,1.0,10.00,"10,000 activity runs / 1000"
+Temporary VpnGw1AZ migration connection,336,vpn,0.21,70.56,On-premises side assumed existing; actual throughput/partner gateway quoted separately
+VPN public IPv4,336,public_ip,0.005,1.68,
+Initial Cosmos secondary-region seeds,20000,intercontinental_na_eu,0.05,1000.00,10 TB to Europe + 10 TB to Asia; SQL geo-seed transfer is included
+Initial independent Blob backup copies to other continents,60000,intercontinental_na_eu,0.05,3000.00,30 TB x 2 destinations
+Initial GRS/GZRS paired-region replication allowance,90000,intercontinental_na_eu,0.05,4500.00,"30 TB in each of 3 accounts; conservatively budget $0.05/GB, including non-North-American origins"
+14-day parallel Azure destination / validation overlap,0.4666666666666666666666666667,cost_management,43316.66,20214.44,"14/30 of scheduled PAYG monthly model, including management; conservative additional pre-production window"
+Migration engineering and cutover effort allowance,80,cost_management,75,6000.00,"Assumed 80 hours x $75/hour; planning allowance, not a vendor cloud price"

@@ -1,0 +1,91 @@
+category,item,region,quantity,rate_key,unit_price,monthly_usd,calculation
+Operations,Web: D4s v5 Linux,eastus,7300,vm_eastus_payg,0.192,1401.60,VM count x 730 hours
+Operations,API: D4s v5 Linux,eastus,5840,vm_eastus_payg,0.192,1121.28,All peak nodes x 730
+Operations,Payment: Windows D4s v5 license included,eastus,1460,windows_eastus,0.376,548.96,
+Operations,128 GiB E10 LRS OS disks,eastus,23,disk_eastus,9.6,220.80,Retained even when VM is deallocated
+Operations,Managed-disk transactions,eastus,2300.0,disk_ops,0.002,4.60,1 million billed operations per allocated disk; East US transaction meter used for equal-price regions
+Operations,SQL Hyperscale Gen5 compute,eastus,11680,sql_eastus_payg,0.18266,2133.47,vCores x compute copies x 730
+Operations,SQL Hyperscale allocated storage,eastus,5000,sql_storage_eastus,0.25,1250.00,One storage copy per regional database; HA shares primary storage
+Operations,SQL geo-redundant PITR backup allowance,eastus,5000,sql_backup_eastus,0.2,1000.00,"5 TB incremental/billed backup storage per regional DB; budget assumption, not guaranteed retention capacity"
+Operations,Cosmos DB single-write manual throughput,eastus,146000,cosmos_ru,0.008,1168.00,"20,000 RU/s x 730 / 100 per region in year 1; no free tier"
+Operations,Cosmos DB data and index storage,eastus,10000,cosmos_storage,0.25,2500.00,10 TB is assumed to include indexes; billed in every region
+Operations,Independent full logical backup set: Blob,eastus,30000,blob_eastus,0.0468,1404.00,"One 30 TB logical backup set per continent; East US/Europe GZRS, Southeast Asia GRS"
+Operations,Blob write operation budget,eastus,1000,blob_writes_eastus,0.1175,117.50,Exact regional Hot GZRS/GRS write meter
+Operations,Blob read operation budget,eastus,1000,blob_reads,0.004,4.00,10 million monthly operations per region
+Operations,Standard regional load balancer,eastus,730,lb_hour,0.025,18.25,1 LB with <=5 included rules
+Operations,Load-balancer processed data,eastus,2000,lb_gb,0.005,10.00,
+Operations,NAT Gateway,eastus,730,nat_hour,0.045,32.85,1 outbound gateway per region; production HA design must be validated
+Operations,NAT processed data,eastus,1000,nat_gb,0.045,45.00,
+Operations,Public IPs: LB + NAT,eastus,1460,public_ip,0.005,7.30,
+Operations,Front Door Premium CDN egress,eastus,5000,fd_gb_na_eu,0.083,415.00,
+Operations,Front Door Premium requests,eastus,1000,fd_requests_na_eu,0.015,15.00,
+Operations,Front Door edge-to-origin requests,eastus,100,fd_origin_na_eu,0.02,2.00,
+Operations,Web: D4s v5 Linux,westeurope,7300,vm_westeurope_payg,0.23,1679.00,VM count x 730 hours
+Operations,API: D4s v5 Linux,westeurope,4380,vm_westeurope_payg,0.23,1007.40,All peak nodes x 730
+Operations,Payment: Windows D4s v5 license included,westeurope,1460,windows_westeurope,0.414,604.44,
+Operations,128 GiB E10 LRS OS disks,westeurope,18,disk_westeurope,9.6,172.80,Retained even when VM is deallocated
+Operations,Managed-disk transactions,westeurope,1800.0,disk_ops,0.002,3.60,1 million billed operations per allocated disk; East US transaction meter used for equal-price regions
+Operations,SQL Hyperscale Gen5 compute,westeurope,5840,sql_westeurope_payg,0.200926,1173.41,vCores x compute copies x 730
+Operations,SQL Hyperscale allocated storage,westeurope,5000,sql_storage_westeurope,0.301724,1508.62,One storage copy per regional database; HA shares primary storage
+Operations,SQL geo-redundant PITR backup allowance,westeurope,5000,sql_backup_westeurope,0.238,1190.00,"5 TB incremental/billed backup storage per regional DB; budget assumption, not guaranteed retention capacity"
+Operations,Cosmos DB single-write manual throughput,westeurope,146000,cosmos_ru,0.008,1168.00,"20,000 RU/s x 730 / 100 per region in year 1; no free tier"
+Operations,Cosmos DB data and index storage,westeurope,10000,cosmos_storage,0.25,2500.00,10 TB is assumed to include indexes; billed in every region
+Operations,Independent full logical backup set: Blob,westeurope,30000,blob_westeurope,0.046,1380.00,"One 30 TB logical backup set per continent; East US/Europe GZRS, Southeast Asia GRS"
+Operations,Blob write operation budget,westeurope,1000,blob_writes_westeurope,0.1175,117.50,Exact regional Hot GZRS/GRS write meter
+Operations,Blob read operation budget,westeurope,1000,blob_reads,0.004,4.00,10 million monthly operations per region
+Operations,Standard regional load balancer,westeurope,730,lb_hour,0.025,18.25,1 LB with <=5 included rules
+Operations,Load-balancer processed data,westeurope,2000,lb_gb,0.005,10.00,
+Operations,NAT Gateway,westeurope,730,nat_hour,0.045,32.85,1 outbound gateway per region; production HA design must be validated
+Operations,NAT processed data,westeurope,1000,nat_gb,0.045,45.00,
+Operations,Public IPs: LB + NAT,westeurope,1460,public_ip,0.005,7.30,
+Operations,Front Door Premium CDN egress,westeurope,5000,fd_gb_na_eu,0.083,415.00,
+Operations,Front Door Premium requests,westeurope,1000,fd_requests_na_eu,0.015,15.00,
+Operations,Front Door edge-to-origin requests,westeurope,100,fd_origin_na_eu,0.02,2.00,
+Operations,Web: D4s v5 Linux,southeastasia,7300,vm_southeastasia_payg,0.24,1752.00,VM count x 730 hours
+Operations,API: D4s v5 Linux,southeastasia,4380,vm_southeastasia_payg,0.24,1051.20,All peak nodes x 730
+Operations,Payment: Windows D4s v5 license included,southeastasia,1460,windows_southeastasia,0.424,619.04,
+Operations,128 GiB E10 LRS OS disks,southeastasia,18,disk_southeastasia,9.6,172.80,Retained even when VM is deallocated
+Operations,Managed-disk transactions,southeastasia,1800.0,disk_ops,0.002,3.60,1 million billed operations per allocated disk; East US transaction meter used for equal-price regions
+Operations,SQL Hyperscale Gen5 compute,southeastasia,5840,sql_southeastasia_payg,0.217365,1269.41,vCores x compute copies x 730
+Operations,SQL Hyperscale allocated storage,southeastasia,5000,sql_storage_southeastasia,0.301724,1508.62,One storage copy per regional database; HA shares primary storage
+Operations,SQL geo-redundant PITR backup allowance,southeastasia,5000,sql_backup_southeastasia,0.24,1200.00,"5 TB incremental/billed backup storage per regional DB; budget assumption, not guaranteed retention capacity"
+Operations,Cosmos DB single-write manual throughput,southeastasia,146000,cosmos_ru,0.008,1168.00,"20,000 RU/s x 730 / 100 per region in year 1; no free tier"
+Operations,Cosmos DB data and index storage,southeastasia,10000,cosmos_storage,0.25,2500.00,10 TB is assumed to include indexes; billed in every region
+Operations,Independent full logical backup set: Blob,southeastasia,30000,blob_southeastasia,0.04,1200.00,"One 30 TB logical backup set per continent; East US/Europe GZRS, Southeast Asia GRS"
+Operations,Blob write operation budget,southeastasia,1000,blob_writes_southeastasia,0.1,100.00,Exact regional Hot GZRS/GRS write meter
+Operations,Blob read operation budget,southeastasia,1000,blob_reads,0.004,4.00,10 million monthly operations per region
+Operations,Standard regional load balancer,southeastasia,730,lb_hour,0.025,18.25,1 LB with <=5 included rules
+Operations,Load-balancer processed data,southeastasia,2000,lb_gb,0.005,10.00,
+Operations,NAT Gateway,southeastasia,730,nat_hour,0.045,32.85,1 outbound gateway per region; production HA design must be validated
+Operations,NAT processed data,southeastasia,1000,nat_gb,0.045,45.00,
+Operations,Public IPs: LB + NAT,southeastasia,1460,public_ip,0.005,7.30,
+Operations,Front Door Premium CDN egress,southeastasia,5000,fd_gb_apac,0.115,575.00,
+Operations,Front Door Premium requests,southeastasia,1000,fd_requests_apac,0.0168,16.80,
+Operations,Front Door edge-to-origin requests,southeastasia,100,fd_origin_apac,0.06,6.00,
+Operations,Scheduled batch: 2 Linux D8s v5,eastus,1460,batch_payg,0.384,560.64,
+Operations,GPU training: NC4as T4 v3,eastus,730,gpu,0.526,383.98,
+Operations,Synapse dedicated SQL pool DW100c,eastus,730,warehouse,1.51,1102.30,Pause compute after batch/report window; storage remains billed
+Operations,Synapse dedicated warehouse storage and snapshots,eastus,18,warehouse_storage,23.0,414.00,"15 TB data + 20% snapshot allowance, rounded up to whole TB"
+Operations,Synapse native geo-redundant DR backup,eastus,15000,warehouse_geo_backup,0.0562,843.00,Native automatic geo-backup is additional to the explicit cross-continent logical exports
+Operations,Synapse pipeline data movement,eastus,400,pipeline_copy,0.25,100.00,100 hours x 4 DIUs per month
+Operations,Synapse orchestration,eastus,10,pipeline_runs,1.0,10.00,"10,000 activity runs / 1,000"
+Operations,Front Door Premium base / WAF,Global,1,frontdoor_base,330.0,330.00,Managed WAF rules and Private Link feature included; no separate WAF fee
+Operations,Customer-managed private endpoints,Global,8030,private_endpoint,0.01,80.30,3 SQL + 3 Cosmos + 3 Blob + 1 Synapse + 1 Key Vault; distinct from Front Door managed Private Link feature
+Operations,Private-endpoint inbound data,All regions,3000,private_ingress,0.01,30.00,3 TB aggregate across endpoints; distinct processing fee
+Operations,Private-endpoint outbound data,All regions,3000,private_egress,0.01,30.00,3 TB aggregate across endpoints; distinct processing fee
+Operations,Private DNS zones,Global,5,private_dns_zone,0.5,2.50,"5 shared service zones; fewer than 10,000 record sets each"
+Operations,Private DNS queries,Global,30,private_dns_query,0.4,12.00,30 million queries in year 1
+Operations,Public DNS zone,Global,1,public_dns_zone,0.5,0.50,
+Operations,Public DNS queries,Global,10,public_dns_query,0.4,4.00,
+Operations,Cosmos cross-continent replication,eastus -> Europe + Asia,2000,intercontinental_na_eu,0.05,100.00,SQL active geo-replication bandwidth is included and not charged again
+Operations,Independent Blob backup cross-continent delta copies,eastus -> Europe + Asia,6000,intercontinental_na_eu,0.05,300.00,3 TB changes sent to each other continent each month
+Operations,Intra-region cross-zone network allowance,All regions,1,cost_management,0,0.00,No separate cross-zone bandwidth charge assumed; restore/failed-over workload is covered by contingency
+Operations,Paired-region Blob geo-replication bandwidth allowance,All regions,9000,intercontinental_na_eu,0.05,450.00,Conservative $0.05/GB proxy for 3 x 3 TB GRS/GZRS deltas; actual within-continent rates may be lower
+Management,Central Log Analytics ingestion,eastus,395,logs,2.3,908.50,"400 GB in year 1, 5 GB free, <=31 days interactive retention; no extended retention assumed"
+Management,Billable metric-alert time series,eastus,20,alerts,0.1,2.00,
+Management,Defender for Servers Plan 1,All regions,43070,defender,0.00672,289.43,Billed on actual provisioned server-hours
+Management,Defender for SQL,3 logical SQL servers + Synapse,4,defender_sql,15.0,60.00,
+Management,Key Vault standard operations,eastus,300,vault_ops,0.03,9.00,"3 million standard operations / 10,000"
+Management,Key Vault automatic key rotations,eastus,3,vault_rotate,1.0,3.00,
+Management,Azure Standard support,Subscription,1,support,100,100.00,
+Management,"Cost Management, budgets and tags",Subscription,1,cost_management,0,0.00,

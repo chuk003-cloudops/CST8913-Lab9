@@ -1,0 +1,4 @@
+year,baseline_monthly,optimized_monthly,baseline_annual,optimized_annual,one_time_migration,planned_total,budget_with_15pct_contingency,annual_recurring_savings,maximum_vms
+1,45858.80,38884.98,550305.60,466619.76,36249.78,502869.54,578299.97,83685.84,59
+2,56809.22,48670.30,681710.64,584043.60,0,584043.60,671650.14,97667.04,71
+3,70071.28,60841.59,840855.36,730099.08,0,730099.08,839613.94,110756.28,84
