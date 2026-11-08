@@ -24,6 +24,6 @@ Source: the live CST8913 Brightspace Lab 09 assignment, checked November 7, 2026
 | Cost Estimate Report deliverable | REPORT.md section 1 | Covered |
 | Cost Optimization Strategy deliverable | REPORT.md section 2 | Covered |
 | Future Growth and Budget Plan deliverable | REPORT.md section 3 and three-year-budget.csv | Covered |
-| All reports/submission on GitHub | Public school-account repository; README links to all deliverables | Verify public repository before Brightspace submission |
+| All reports/submission on GitHub | Public school-account repository; README links to all deliverables; all public files byte-matched and fresh public download reproduced the checked model | Covered |
 
 The estimate distinguishes quoted unit rates from workload assumptions and explicitly labelled allowances. It does not claim actual application deployment, performance, failover, PCI certification or license eligibility. Arithmetic and calculator checks are recorded in [verification.json](evidence/verification.json).
